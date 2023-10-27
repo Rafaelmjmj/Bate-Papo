@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo WhatsApp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app">
+        <div class="sidebar">
+            <div class="header">
+                <h1>Chats</h1>
+            </div>
+            <div class="chat-list">
+                <div class="chat-item" onclick="changeChat('Amigo 1')">Amigo 1</div>
+                <div class="chat-item" onclick="changeChat('Amigo 2')">Amigo 2</div>
+                <div class="chat-item" onclick="changeChat('Amigo 3')">Amigo 3</div>
+            </div>
+        </div>
+        <div class="chat-area">
+            <div class="chat-header">
+                <h2 id="chat-title">Amigo 1</h2>
+            </div>
+            <div class="messages" id="messages">
+                <!-- As mensagens serão inseridas aqui via JavaScript -->
+            </div>
+            <div class="input-area">
+                <input type="text" id="message-input" placeholder="Digite uma mensagem...">
+                <button onclick="sendMessage()">Enviar</button>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
